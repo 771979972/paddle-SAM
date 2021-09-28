@@ -166,3 +166,5 @@ The overall information of the model is as follows:
 | Version     | Paddle 2.1.2     |
 | Application | Image Generation |
 | Hardware    | GPU / CPU        |
+
+#encoding=utf8
