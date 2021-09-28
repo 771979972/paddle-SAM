@@ -1,6 +1,6 @@
 # 论文复现：Only a Matter of Style: Age Transformation Using a Style-Based Regression Model
 
-[English](README.md) | [简体中文](README.md)
+[English](SAM.md) | [简体中文](README.md)
 
 - **paddle-SAM**
   - [一、简介](#一简介)
