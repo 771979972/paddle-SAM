@@ -12,10 +12,10 @@
   * [5 Prentrained models](#5-Prentrained-models)
   * [6 Quick start](#6-Quick-start)
     * [6.1 Inference](#6.1-Inference)
-    * [6.2 train](#6.2-train)
-    * [6.3 others](#6.3-others )
+    * [6.2 Train](#6.2-Train)
+    * [6.3 Others](#6.3-others )
   * [7 Code structure](#7-Code-structure)
-    * [7.1 structure](#7.1-structure)
+    * [7.1 Structure](#7.1-Structure)
     * [7.2 Parameter description](#7.2-Parameter-description)
   * [8 Model information](#8-Model-information)
 
@@ -121,7 +121,7 @@ Configuration Environment
     --id_lambda=0.1 /
     --optim_name=ranger
 
-### 6.3 **others**
+### 6.3 **Others**
 
 LPIPS
 
