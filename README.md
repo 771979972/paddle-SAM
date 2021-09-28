@@ -5,19 +5,19 @@
 [English](README.md)|[简体中文](README_cn.md)
 
 * **paddle-SAM**
-  * [1 Introduction](1 Introduction)
-  * [2 Result](2 Result)
-  * [3 Dataset](3 Dataset)
-  * [4 Environment](4 Environment)
-  * [5 Prentrained models](5 Prentrained models)
-  * [6 Quick start](6 Quick start)
-    * [6.1 Inference](6.1 Inference)
-    * [6.2 train](6.2 train)
-    * [6.3 others](6.3 others )
-  * [7 Code structure](7 Code structure)
-    * [7.1 structure]( 7.1structure)
-    * [7.2 Parameter description](7.2 Parameter description)
-  * [8 Model information](8 Model information)
+  * [1 Introduction](1Introduction)
+  * [2 Result](2Result)
+  * [3 Dataset](3Dataset)
+  * [4 Environment](4Environment)
+  * [5 Prentrained models](5Prentrainedmodels)
+  * [6 Quick start](6Quickstart)
+    * [6.1 Inference](6.1Inference)
+    * [6.2 train](6.2train)
+    * [6.3 others](6.3others )
+  * [7 Code structure](7Codestructure)
+    * [7.1 structure](7.1structure)
+    * [7.2 Parameter description](7.2 Parameterdescription)
+  * [8 Model information](8Modelinformation)
 
 # 
 
@@ -146,7 +146,7 @@ Similarity
 
 # 7 Code structure
 
-#### 7.1**Structure**
+#### 7.1 **Structure**
 
     ├─config          # 配置
     ├─data            #数据集加载
@@ -164,7 +164,7 @@ Similarity
     │  README.md      #英文readme
     │  README_cn.md   #中文readme
 
-#### 7.2**Parameter description**
+#### 7.2 **Parameter description**
 
 | Parameter                 | Default        |
 | ------------------------- | -------------- |
