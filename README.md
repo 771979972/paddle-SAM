@@ -89,7 +89,7 @@ Baidu driver：[https://pan.baidu.com/s/1G-Ffs8-y93R0ZlD9mEU6Eg](https://pan.bai
     git clone [https://github.com/771979972/paddle-SAM.git]
     cd work
 
-#### 6.1 **Inference**
+### 6.1 **Inference**
 
     python SAM/scripts/inference_side_by_side.py 
     --exp_dir=exp/test 
@@ -104,7 +104,7 @@ Configuration Environment
     !pip install --upgrade matplotlib
     python SAM/scripts/compile_ranger.py
 
-#### 6.2 Train
+### 6.2 Train
 
     python SAM/scripts/train.py /
     --dataset_type=ffhq_encode /
@@ -121,7 +121,7 @@ Configuration Environment
     --id_lambda=0.1 /
     --optim_name=ranger
 
-#### 6.3 **others**
+### 6.3 **others**
 
 LPIPS
 
@@ -146,7 +146,7 @@ Similarity
 
 # 7 Code structure
 
-#### 7.1 **Structure**
+### 7.1 **Structure**
 
     ├─config          # 配置
     ├─data            #数据集加载
@@ -164,7 +164,7 @@ Similarity
     │  README.md      #英文readme
     │  README_cn.md   #中文readme
 
-#### 7.2 **Parameter description**
+### 7.2 **Parameter description**
 
 | Parameter                 | Default        |
 | ------------------------- | -------------- |
