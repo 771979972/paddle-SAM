@@ -12,9 +12,9 @@
 
   - [三、数据集](#三数据集)
 
-  - [四、环境依赖](四环境依赖)
+  - [四、环境依赖](#四环境依赖)
 
-  - [五、预训练模型](五快速开始)
+  - [五、预训练模型](#五快速开始)
 
   - [六、快速开始](#六快速开始)
 
@@ -94,7 +94,7 @@
     git clone [https://github.com/771979972/paddle-SAM.git]
     cd paddle-SAM
 
-####  **Inference**
+#### **Inference**
 
     python SAM/scripts/inference_side_by_side.py 
     --exp_dir=exp/test 
@@ -151,7 +151,7 @@
 
 # **七、代码结构与详细说明**
 
-#### **代码结构**
+####  **代码结构**
 
     ├─config          # 配置
     ├─data            #数据集加载
