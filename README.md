@@ -5,8 +5,21 @@
 [English](README.md)|[简体中文](README_cn.md)
 
 * **paddle-SAM**
+  * [1 Introduction](#1 Introduction)
+  * [2 Result](#2 Result)
+  * [3 Dataset](#3 Dataset)
+  * [4 Environment](4 Environment)
+  * [5 Prentrained models](#5 Prentrained models)
+  * [6 Quick start](#6 Quick start)
+    * [6.1 Inference](#6.1 Inference)
+    * [6.2 train](#6.2 train)
+    * [6.3 others](#6.3 others )
+  * [7 Code structure](#7 Code structure)
+    * [7.1 structure](#7.1 structure)
+    * [7.2 Parameter description](#7.2 Parameter description)
+  * [8 Model information](#8 Model information)
 
-[toc]
+# 
 
 # 1 Introduction
 
@@ -76,7 +89,7 @@ Baidu driver：[https://pan.baidu.com/s/1G-Ffs8-y93R0ZlD9mEU6Eg](https://pan.bai
     git clone [https://github.com/771979972/paddle-SAM.git]
     cd work
 
-#### **Inference**
+#### 6.1 **Inference**
 
     python SAM/scripts/inference_side_by_side.py 
     --exp_dir=exp/test 
@@ -86,12 +99,12 @@ Baidu driver：[https://pan.baidu.com/s/1G-Ffs8-y93R0ZlD9mEU6Eg](https://pan.bai
     --test_workers=0 
     --target_age=0,10,20,30,40,50,60,70,80,90,100
 
-#### Configuration Environment
+Configuration Environment
 
     !pip install --upgrade matplotlib
     python SAM/scripts/compile_ranger.py
 
-#### Train
+#### 6.2 Train
 
     python SAM/scripts/train.py /
     --dataset_type=ffhq_encode /
@@ -108,7 +121,7 @@ Baidu driver：[https://pan.baidu.com/s/1G-Ffs8-y93R0ZlD9mEU6Eg](https://pan.bai
     --id_lambda=0.1 /
     --optim_name=ranger
 
-#### **others**
+#### 6.3 **others**
 
 LPIPS
 
@@ -133,7 +146,7 @@ Similarity
 
 # 7 Code structure
 
-#### **Structure**
+#### 7.1**Structure**
 
     ├─config          # 配置
     ├─data            #数据集加载
@@ -151,11 +164,31 @@ Similarity
     │  README.md      #英文readme
     │  README_cn.md   #中文readme
 
-#### **Parameter description**
+#### 7.2**Parameter description**
 
-| Parameter | Default |
-| --------- | ------- |
-| config    | None    |
+| Parameter                 | Default        |
+| ------------------------- | -------------- |
+| config                    | None           |
+| dataset_type              | ffhq_aging     |
+| exp_dir                   | `exp/test`     |
+| workers                   | 0              |
+| test_workers              | 0              |
+| batch_size                | 6              |
+| test_batch_size           | 6              |
+| start_from_encoded_w_plus | store-true     |
+| use_weighted_id_loss      | store-true     |
+| id_lambda                 | 0.1            |
+| lpips_lambda              | 0.1            |
+| lpips_lambda_aging        | 0.1            |
+| lpips_lambda_crop         | 0.6            |
+| l2_lambda                 | 0.25           |
+| l2_lambda_aging           | 0，25          |
+| l2_lambda_crop            | 1              |
+| w_norm_lambda             | 0，005         |
+| aging_lambda              | 5              |
+| cycle_lambda              | 1              |
+| input_nc                  | 4              |
+| target_age                | uniform_random |
 
 # 8 Model information
 
