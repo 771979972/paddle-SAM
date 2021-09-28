@@ -16,7 +16,7 @@
     * [6.3 others](6.3others )
   * [7 Code structure](7Codestructure)
     * [7.1 structure](7.1structure)
-    * [7.2 Parameter description](7.2 Parameterdescription)
+    * [7.2 Parameter description](7.2Parameterdescription)
   * [8 Model information](8Modelinformation)
 
 # 
