@@ -18,15 +18,15 @@
 
   - [六、快速开始](#六快速开始)
 
-    - [6.1 inference](#61-inference)
-    - [6.2 训练](#62-训练)
-    - [6.3 计算其他指标](#63-计算其他指标)
+    - [inference](#inference)
+    - [训练](#训练)
+    - [计算其他指标](#计算其他指标)
 
   - [七、代码结构与详细说明](#七代码结构与详细说明)
 
-    * [7.1 代码结构](#7.1-代码结构)
+    * [代码结构](#代码结构)
 
-    * [7.2 参数说明](#7.2-参数说明)
+    * [参数说明](#参数说明)
 
   - [八、模型信息](#八模型信息)
 
@@ -94,7 +94,7 @@
     git clone [https://github.com/771979972/paddle-SAM.git]
     cd paddle-SAM
 
-#### 6.1 **Inference**
+####  **Inference**
 
     python SAM/scripts/inference_side_by_side.py 
     --exp_dir=exp/test 
@@ -109,7 +109,7 @@
     !pip install --upgrade matplotlib
     python SAM/scripts/compile_ranger.py
 
-#### 6.2 然后再训练
+####  然后再训练
 
     python SAM/scripts/train.py /
     --dataset_type=ffhq_encode /
@@ -126,7 +126,7 @@
     --id_lambda=0.1 /
     --optim_name=ranger
 
-#### 6.3 **计算其他指标**
+####  **计算其他指标**
 
 计算LPIPS
 
@@ -151,7 +151,7 @@
 
 # **七、代码结构与详细说明**
 
-#### 7.1 **代码结构**
+#### **代码结构**
 
     ├─config          # 配置
     ├─data            #数据集加载
@@ -169,7 +169,7 @@
     │  README.md      #英文readme
     │  README_cn.md   #中文readme
 
-#### 7.2 **参数说明**
+####  **参数说明**
 
 | 参数                      | 设置值         |
 | ------------------------- | -------------- |
