@@ -11,12 +11,12 @@
   * [4 Environment](#4-Environment)
   * [5 Pretrained models](#5-Pretrained-models)
   * [6 Quick start](#6-Quick-start)
-    * [6.1 Inference](#6.1-Inference)
-    * [6.2 Train](#6.2-Train)
-    * [6.3 Others](#6.3-others )
+    * [Inference](#Inference)
+    * [Train](#Train)
+    * [Others](#Others )
   * [7 Code structure](#7-Code-structure)
-    * [7.1 Structure](#7.1-Structure)
-    * [7.2 Parameter description](#7.2-Parameter-description)
+    * [Structure](#Structure)
+    * [Parameter description](#Parameter-description)
   * [8 Model information](#8-Model-information)
 
 # 
@@ -89,7 +89,7 @@ Baidu driver：[https://pan.baidu.com/s/1G-Ffs8-y93R0ZlD9mEU6Eg](https://pan.bai
     git clone [https://github.com/771979972/paddle-SAM.git]
     cd work
 
-### 6.1 **Inference**
+###  **Inference**
 
     python SAM/scripts/inference_side_by_side.py 
     --exp_dir=exp/test 
@@ -104,7 +104,7 @@ Configuration Environment
     !pip install --upgrade matplotlib
     python SAM/scripts/compile_ranger.py
 
-### 6.2 Train
+###  Train
 
     python SAM/scripts/train.py /
     --dataset_type=ffhq_encode /
@@ -121,7 +121,7 @@ Configuration Environment
     --id_lambda=0.1 /
     --optim_name=ranger
 
-### 6.3 **Others**
+### **Others**
 
 LPIPS
 
@@ -146,7 +146,7 @@ Similarity
 
 # 7 Code structure
 
-### 7.1 **Structure**
+###  **Structure**
 
     ├─config          # 配置
     ├─data            #数据集加载
@@ -164,7 +164,7 @@ Similarity
     │  README.md      #英文readme
     │  README_cn.md   #中文readme
 
-### 7.2 **Parameter description**
+###  **Parameter description**
 
 | Parameter                 | Default        |
 | ------------------------- | -------------- |
